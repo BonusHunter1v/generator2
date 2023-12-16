@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.pdfContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 10px;
+    width: 800px;
+}
+
+.pdfLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-right: 2px dashed gray;
+    padding-right: 10px;
+
+}
+
+.pdfLeftLogo {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 80%;
+    }
+
+}
+
+.pdfLeftDescribeLogo {
+    p {
+        font-size: 8px;
+        text-align: center;
+        margin: 4px auto;
+    }
+}
+
+.pdfLeftMonate {
+    font-size: 8px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.pdfLeftTable1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: gray;
+    padding: 2px;
+
+    div {
+        background-color: white;
+        font-size: 9px;
+        padding: 10px;
+        text-align: center;
+
+        &:nth-child(2) {
+            font-weight: 900;
+        }
+    }
+
+}
+
+.pdfLeftUserName {
+    font-size: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+.pdfLeftUserAdress {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    padding-left: 20px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.pdfLeftUserPay {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 30px;
+    font-weight: 700;
+
+    div {
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid rgb(60, 60, 60);
+        border-left: 1px solid rgb(60, 60, 60);
+        transform: rotate(-45deg);
+        margin-right: -5px;
+    }
+}
+
+.pdfLeftUserTable2 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 8px;
+    gap: 1px;
+    background-color: gray;
+    padding: 1px;
+
+    div {
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+//             Права сторона
+
+
+
+
+.pdfRight {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    background-color: gray;
+    gap: 1px;
+
+    div {
+        background-color: white;
+    }
+
+    width: 80%;
+}
+
+
+.pdfRightHeader {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    font-size: 7px;
+
+}
+
+.pdfRightHeaderLeft {
+    text-align: left;
+    padding-left: 10px;
+
+    h2 {
+        color: #4A5EA7;
+        margin-bottom: 7px;
+        margin-top: 5px;
+    }
+
+    p {
+        font-weight: 500;
+        margin-top: 1px;
+        margin-bottom: 3px;
+        font-weight: 700;
+    }
+}
+
+.pdfRightHeaderRight {
+    text-align: right;
+    padding-left: 10px;
+
+    p {
+        margin-bottom: 0;
+        margin-top: 2px;
+    }
+}
+
+.pdfRight2Level {
+    display: flex;
+    font-size: 9px;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    p {
+        margin: 5px;
+    }
+}
+
+.pdfRight3Level {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-evenly;
+
+    div {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 3%;
+        &:not(:last-child) {
+            border-right: solid 1px gray;
+        }
+
+    }
+
+
+}
+
+.pdfRight4Level {
+    color: #4A5EA7;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+
+
+}
+
+.pdfRight5Level {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    font-size: 7px;
+    background-color: gray !important; 
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        &:nth-child(13),
+        &:nth-child(17)
+         {
+            grid-column: span 2;
+           
+        }
+
+        &:nth-child(6),
+        &:nth-child(10)
+         {
+            background-color: orange;
+            font-weight: 900;
+        }
+
+        &:nth-child(1),
+        &:nth-child(5),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(15),
+        &:nth-child(16),
+        &:nth-child(17),
+        &:nth-child(18) {
+            font-weight: 900;
+        }
+
+    }
+
+}
+
+.pdfRight6Level {
+    font-size: 7px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.pdfRight7Level {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+   font-size: 7px;
+   gap: 1px;
+   background-color: gray !important;
+   div {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+}
+
+.pdfRightBotton {
+    margin-right: -2px;
+    margin-left: -2px;
+    margin-bottom: -2px;
+    font-size: 7px;
+    padding-top: 5px;
+    text-align: center;
+    overflow: visible;
+    height: 30px;
+
+}
+
+
+.button {
+    width: 100%;
+    background-color: aquamarine;
+    cursor: pointer;
+}

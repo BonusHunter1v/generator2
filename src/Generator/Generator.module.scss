@@ -1,0 +1,28 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    border: 1px solid black;
+    height: fit-content;
+    padding: 10px;
+    margin: auto auto;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.all {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.pdf3Inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15x;
+}
